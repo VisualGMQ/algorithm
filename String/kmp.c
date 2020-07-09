@@ -11,7 +11,12 @@ void GetNextArr(const char* s, int* next, int len){
     next[0] = -1;
     while(comp2<len-1){
         if(comp1==-1 || s[comp1]==s[comp2]){
-            next[++comp2] = ++comp1;
+            comp1++;
+            comp2++;
+            if(s[comp1]!=s[comp2])
+                next[comp2] = comp1;
+            else
+                next[comp2] = next[comp1];
         }else{
             comp1 = next[comp1];
         }
