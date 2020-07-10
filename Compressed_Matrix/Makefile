@@ -13,5 +13,5 @@ t_sparsematrix.out:t_sparsematrix.c
 
 .PHONY:clean
 clean:
-	-rm *.dSYM
+	-rm -rf *.dSYM
 	-rm *.out

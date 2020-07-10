@@ -17,4 +17,5 @@ h_question4.out:h_question4.c
 
 .PHONY:clean
 clean:
-	rm -rf *.out
+	-rm  *.out
+	-rm -rf *.dSYM
